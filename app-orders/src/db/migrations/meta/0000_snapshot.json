@@ -55,11 +55,7 @@
     "public.order_status": {
       "name": "order_status",
       "schema": "public",
-      "values": [
-        "pending",
-        "paid",
-        "canceled"
-      ]
+      "values": ["pending", "paid", "canceled"]
     }
   },
   "schemas": {},

@@ -7,6 +7,10 @@ const envSchema = z.object({
   DATABASE_URL: z.string().url(),
   // BROKER
   BROKER_URL: z.string().url(),
+  // OTel
+  OTEL_TRACES_EXPORTER: z.string(),
+  OTEL_EXPORTER_OTLP_ENDPOINT: z.string().url(),
+  OTEL_SERVICE_NAME: z.string(),
 })
 
 const _env = envSchema.safeParse(process.env)
