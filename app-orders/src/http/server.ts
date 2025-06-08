@@ -54,13 +54,13 @@ app.post(
       amount,
     })
 
-    const span = tracer.startSpan('Eu acho que aqui está dando merda')
+    // const span = tracer.startSpan('Eu acho que aqui está dando merda')
 
-    span.setAttribute('test', 'Hello World!')
+    // span.setAttribute('test', 'Hello World!')
 
-    await setTimeout(2000)
+    // await setTimeout(2000)
 
-    span.end()
+    // span.end()
 
     trace.getActiveSpan()?.setAttribute('order_id', orderId)
 
